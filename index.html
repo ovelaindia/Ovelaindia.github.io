@@ -7,6 +7,23 @@
   <meta name="description" content="Ovela Ultra Premium Natural Mineral Water by Orila India Private Limited">
   <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll(".reveal");
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveals[i].getBoundingClientRect().top;
+      const elementVisible = 120;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+</script>
 <body>
 
 <header class="navbar">
