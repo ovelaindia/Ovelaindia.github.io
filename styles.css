@@ -146,3 +146,37 @@ footer {
     flex-direction: column;
   }
 }
+.logo-wrap img {
+  height: 45px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-bottle {
+  height: 380px;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 260px;
+  background: #f8f8f8;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.product-card img {
+  height: 220px;
+  margin-bottom: 15px;
+}
