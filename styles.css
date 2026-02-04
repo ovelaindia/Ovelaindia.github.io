@@ -169,3 +169,14 @@ footer {
   color: #ddd;
   margin-bottom: 30px;
 }
+/* SCROLL ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.9s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
