@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Ovela® | Ultra Premium Mineral Water</title>
+  <meta charset="UTF-8">
+  <title>OVELA® | Ultra Premium Mineral Water</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ovela Ultra Premium Natural Mineral Water by Orila India Private Limited">
+  <meta name="description" content="OVELA Ultra Premium Natural Mineral Water by Orila India Private Limited">
   <link rel="stylesheet" href="styles.css">
 </head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <img src="assets/logo.png" alt="Ovela Logo" class="logo">
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO BANNER (NO BOTTLE IMAGE) -->
+<section class="hero-banner reveal">
+  <div class="overlay">
+    <h1>OVELA</h1>
+    <p class="tagline">Ultra Premium Natural Mineral Water</p>
+
+    <p class="hero-desc">
+      Crafted using advanced RO purification and mineral balancing,
+      Ovela delivers purity, taste, and trust in every drop.
+    </p>
+
+    <a href="#contact" class="btn">Become a Distributor</a>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="products reveal">
+  <h2>Our Products</h2>
+
+  <div class="product-grid">
+    <div class="card">
+      <img src="assets/bottle-250.png" alt="250 ml">
+      <h3>250 ml</h3>
+    </div>
+
+    <div class="card">
+      <img src="assets/bottle-500.png" alt="500 ml">
+      <h3>500 ml</h3>
+    </div>
+
+    <div class="card">
+      <img src="assets/bottle-1l.png" alt="1 Liter">
+      <h3>1 Liter</h3>
+    </div>
+
+    <div class="card">
+      <img src="assets/bottle-20l.png" alt="20 Liter">
+      <h3>20 Liter Jar</h3>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about reveal">
+  <h2>About Ovela</h2>
+
+  <p>
+    Ovela is an ultra-premium packaged drinking water brand by
+    <strong>Orila India Private Limited</strong>, created for those who value
+    purity, elegance, and consistency.
+  </p>
+
+  <p>
+    Using state-of-the-art RO purification and controlled mineral enhancement,
+    Ovela ensures a clean taste and balanced hydration for everyday use,
+    hospitality, and premium distribution.
+  </p>
+
+  <p>
+    Available in 250 ml, 500 ml, 1 Litre bottles and 20 Litre jars.
+    FSSAI registered and quality focused.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact reveal">
+  <h2>Contact Us</h2>
+
+  <p><strong>Phone:</strong> 8860802626</p>
+  <p><strong>Email:</strong> ovelaindia@gmail.com</p>
+  <p><strong>Address:</strong> 213/3 Makhu Gate, Firozpur, Punjab</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 OVELA® | Orila India Private Limited
+</footer>
+
+<!-- SCROLL ANIMATION SCRIPT -->
 <script>
   function revealOnScroll() {
     const reveals = document.querySelectorAll(".reveal");
@@ -24,96 +116,6 @@
   window.addEventListener("scroll", revealOnScroll);
   revealOnScroll();
 </script>
-<body>
-
-<header class="navbar">
-  <img src="assets/logo.png" alt="Ovela Logo" class="logo">
-  <nav>
-    <a href="#products">Products</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section class="hero-banner reveal">
-  <div class="overlay">
-    <img src="assets/logo.png" class="hero-logo" alt="Ovela Logo">
-
-    <h1>OVELA</h1>
-    <p class="tagline">Ultra Premium Natural Mineral Water</p>
-
-    <p class="hero-desc">
-      Crafted with advanced RO & mineral balancing technology, Ovela delivers
-      purity, elegance, and trust in every drop.
-    </p>
-
-    <a href="#contact" class="btn">Become a Distributor</a>
-  </div>
-</section>
-  <div class="hero-text">
-    <h1>OVELA</h1>
-    <p>Ultra Premium Natural Mineral Water</p>
-    <a href="#contact" class="btn">Become a Distributor</a>
-  </div>
-  <img src="assets/bottle-1l.png" class="hero-img">
-</section>
-
-<section id="products reveal" class="products">
-  <h2>Our Products</h2>
-  <div class="product-grid">
-
-    <div class="card">
-      <img src="assets/bottle-250.png">
-      <h3>250 ml</h3>
-    </div>
-
-    <div class="card">
-      <img src="assets/bottle-500.png">
-      <h3>500 ml</h3>
-    </div>
-
-    <div class="card">
-      <img src="assets/bottle-1l.png">
-      <h3>1 Liter</h3>
-    </div>
-
-    <div class="card">
-      <img src="assets/bottle-20l.png">
-      <h3>20 Liter Jar</h3>
-    </div>
-
-  </div>
-</section>
-
-<section id="about reveal" class="about">
-  <h2>About Ovela</h2>
-  <p>
-  Ovela is an ultra-premium packaged drinking water brand by
-  <strong>Orila India Private Limited</strong>, designed for those who value purity,
-  sophistication, and consistency.
-</p>
-
-<p>
-  Using state-of-the-art RO purification and mineral enhancement,
-  Ovela ensures every bottle delivers clean taste and balanced minerals —
-  ideal for daily hydration, hospitality, and premium distribution.
-</p>
-
-<p>
-  Available in 250 ml, 500 ml, 1 Litre bottles and 20 Litre jars.
-</p>
-</section>
-
-<section id="contact reveal" class="contact">
-  <h2>Contact Us</h2>
-  <p><strong>Phone:</strong> 8860802626</p>
-  <p><strong>Email:</strong> ovelaindia@gmail.com</p>
-  <p><strong>Address:</strong> 213/3 Makhu Gate, Firozpur, Punjab</p>
-</section>
-
-<footer>
-  © 2026 Ovela® | Orila India Private Limited
-</footer>
 
 </body>
 </html>
