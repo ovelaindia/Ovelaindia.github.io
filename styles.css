@@ -1,182 +1,131 @@
-:root {
-  --blue: #0B2E4F;
-  --gold: #C9A24D;
-  --white: #ffffff;
-  --dark: #2B2B2B;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  color: var(--dark);
-  line-height: 1.6;
+  background: #0b1d2a;
+  color: #fff;
 }
 
-.header {
-  background: var(--blue);
-  color: var(--gold);
-  padding: 20px 40px;
+/* NAVBAR */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 60px;
+  background: #071621;
 }
 
 .logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
+  height: 50px;
+}
+
+nav a {
+  color: #d4af37;
+  margin-left: 30px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background: linear-gradient(135deg, #0b1d2a, #071621);
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  color: #d4af37;
   letter-spacing: 2px;
 }
 
-.header nav a {
-  color: var(--white);
-  margin-left: 20px;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.hero {
-  background: linear-gradient(rgba(11,46,79,0.85), rgba(11,46,79,0.85)),
-              url('https://images.unsplash.com/photo-1502741126161-b048400d7a46');
-  background-size: cover;
-  background-position: center;
-  color: var(--white);
-  text-align: center;
-  padding: 120px 20px;
-}
-
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 48px;
-}
-
-.hero h1 span {
-  color: var(--gold);
-}
-
-.hero p {
-  margin: 20px 0;
-  font-size: 18px;
+.hero-text p {
+  font-size: 20px;
+  margin: 15px 0 30px;
 }
 
 .btn {
-  background: var(--gold);
-  color: var(--blue);
-  padding: 12px 28px;
-  text-decoration: none;
-  font-weight: 500;
+  background: #d4af37;
+  color: #071621;
+  padding: 14px 28px;
   border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.section {
-  padding: 80px 20px;
+.hero-img {
+  height: 420px;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 80px 60px;
+  background: #071621;
   text-align: center;
 }
 
-.light {
-  background: var(--white);
-}
-
-.dark {
-  background: var(--blue);
-  color: var(--white);
-}
-
-.section h2 {
-  font-family: 'Playfair Display', serif;
+.products h2 {
   font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  color: var(--gold);
-  margin-bottom: 40px;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.card {
-  background: #f5f5f5;
-  padding: 30px;
-  width: 250px;
-  border-radius: 10px;
-}
-
-.dark-card {
-  background: rgba(255,255,255,0.1);
-  color: var(--white);
-}
-
-.contact-box {
-  max-width: 500px;
-  margin: auto;
-  background: #f8f8f8;
-  padding: 30px;
-  border-radius: 10px;
-}
-
-.note {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-footer {
-  background: #0a2238;
-  color: #aaa;
-  text-align: center;
-  padding: 20px;
-  font-size: 13px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 36px;
-  }
-  .cards {
-    flex-direction: column;
-  }
-}
-.logo-wrap img {
-  height: 45px;
-}
-
-.hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.hero-bottle {
-  height: 380px;
+  color: #d4af37;
+  margin-bottom: 50px;
 }
 
 .product-grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
 }
 
-.product-card {
-  width: 260px;
-  background: #f8f8f8;
-  padding: 25px;
-  border-radius: 12px;
+.card {
+  background: #0b1d2a;
+  padding: 30px;
+  border-radius: 16px;
 }
 
-.product-card img {
+.card img {
   height: 220px;
-  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-top: 20px;
+  color: #d4af37;
+}
+
+/* ABOUT */
+.about {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.about h2 {
+  color: #d4af37;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* CONTACT */
+.contact {
+  padding: 80px 60px;
+  background: #071621;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #aaa;
 }
